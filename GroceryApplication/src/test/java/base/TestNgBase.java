@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-public class TestNgBase {
+public class TestNgBase  {
 public WebDriver driver;
 @BeforeMethod
 public void browserInitializer() {
