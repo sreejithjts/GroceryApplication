@@ -20,7 +20,7 @@ public void verifyLoginWithValidCredentials() throws IOException{
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();	
 }
-@Test(priority = 2)
+@Test(priority = 2,description = "Login with Invalid Username")
 public void verifyLoginWithInvalidUsername() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(3, 0,"LoginPage");
 	String passwordValue=ExcelUtility.getStringData(3, 1, "LoginPage");
@@ -29,7 +29,7 @@ public void verifyLoginWithInvalidUsername() throws IOException {
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();
 }
-@Test(priority = 3)
+@Test(priority = 3,description="Login with Invalid Password")
 public void verifyLoginWithInvalidPassword() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(2, 0,"LoginPage");
 	String passwordValue=ExcelUtility.getStringData(2, 1, "LoginPage");
@@ -38,7 +38,7 @@ public void verifyLoginWithInvalidPassword() throws IOException {
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();
 }
-@Test(priority = 4)
+@Test(priority = 4,description="Login with Invalid Username and Invalid Password")
 public void verifyLoginWithInvalidUsernameInvalidPassword() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(4, 0,"LoginPage");
 	String passwordValue=ExcelUtility.getStringData(4, 1,"LoginPage");
