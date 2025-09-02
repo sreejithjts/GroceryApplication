@@ -20,6 +20,7 @@ public void browserInitializer() {
 	options.setExperimentalOption("prefs", prefs);
 	driver = new ChromeDriver(options);
 	//driver = new FirefoxDriver();
+	
 	driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 	driver.manage().window().maximize();
 }
