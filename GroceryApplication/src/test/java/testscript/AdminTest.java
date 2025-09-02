@@ -38,6 +38,8 @@ public class AdminTest extends TestNgBase {
 		WebElement userTypefield=driver.findElement(By.xpath("//select[@id='user_type']"));
 		Select select = new Select(userTypefield);
 		select.selectByVisibleText(userType);
+		WebElement saveButton = driver.findElement(By.xpath("//button[@type='submit' and @name = 'Create']"));
+		saveButton.click();
 		
 	}
 
