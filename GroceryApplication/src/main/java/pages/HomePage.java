@@ -21,4 +21,6 @@ public class HomePage {
 	WebElement logout=driver.findElement(By.xpath("//i[@class='ace-icon fa fa-power-off']"));
 	logout.click();
 	}
+	
+	
 }
