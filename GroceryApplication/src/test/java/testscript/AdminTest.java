@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestNgBase;
@@ -13,7 +14,7 @@ import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class AdminTest extends TestNgBase {
-	@Test
+	@Test(description = "Verify Add New Users in the Admin")
 	public void verifyAddUser() throws IOException {
 		String usernameValue=ExcelUtility.getStringData(1, 0, "LoginPage");
 		String passwordValue=ExcelUtility.getStringData(1, 1, "LoginPage");
@@ -36,7 +37,8 @@ public class AdminTest extends TestNgBase {
 		adminpage.enterPassword(randompassword);
 		adminpage.enterUserType(userType);
 		adminpage.clickSave();
-		
+		boolean isAlertDisplayed = adminpage.isAlertDisplayed();
+		Assert.assertTrue(isAlertDisplayed,"User is not added successfully");
 	}
 
 }

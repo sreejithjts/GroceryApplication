@@ -3,46 +3,53 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ManageNewsPage {
 	public WebDriver driver;
 	public ManageNewsPage(WebDriver driver) {
 		this.driver=driver;
+		PageFactory.initElements(driver,this);
 	}
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'and @class='small-box-footer']")WebElement managenewstile;
 	public void manageNewsTitle() {
-		WebElement managenewstile=driver.findElement(By.xpath("//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'and @class='small-box-footer']"));
 		managenewstile.click();
 	}
+	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newsbutton;
 	public void clickNewsButton() {
-		WebElement newsbutton = driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-danger']"));
 		newsbutton.click();
 	}
+	@FindBy(xpath="//textarea[@id='news']")WebElement newstextbox;
 	public void enterNewsTextbox() {
-		WebElement newstextbox = driver.findElement(By.xpath("//textarea[@id='news']"));
 		newstextbox.sendKeys("Sample News");
 	}
+	@FindBy(xpath="//button[@type='submit']")WebElement savebutton;
 	public void clickSaveButton() {
-		WebElement savebutton = driver.findElement(By.xpath("//button[@type='submit']"));
 		savebutton.click();
 	}
+	@FindBy(xpath="//a[text()='Home']")WebElement home;
 	public void clickHome() {
-		WebElement home=driver.findElement(By.xpath("//a[text()='Home']"));
 		home.click();
 	}
+	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement search;
 	public void clickSearch() {
-		WebElement search=driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-primary']"));
 		search.click();
 	}
+	@FindBy(xpath="//input[@placeholder='Title']")WebElement title;
 	public void sendTitle() {
-		WebElement title=driver.findElement(By.xpath("//input[@placeholder='Title']"));
 		title.sendKeys("Sample News");
 	}
+	@FindBy(xpath="//button[@name='Search']")WebElement searchbutton;
 	public void searchButtonClick() {
-		WebElement title=driver.findElement(By.xpath("//input[@placeholder='Title']"));
-		title.sendKeys("Sample News");
+		searchbutton.click();
 	}
+	@FindBy(xpath="//a[text()='Reset']")WebElement retest;
 	public void searchResetClick() {
-		WebElement retest=driver.findElement(By.xpath("//a[text()='Reset']"));
 		retest.click();
+	}
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement alert;
+	public boolean isAlertDisplayed() {
+		return alert.isDisplayed();	
 	}
 }

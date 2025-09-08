@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestNgBase;
@@ -19,6 +20,10 @@ public void verifyLoginWithValidCredentials() throws IOException{
 	loginpage.enterUserName(usernameValue);
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();	
+	
+	String actual = driver.getCurrentUrl();
+	String expected = "https://groceryapp.uniqassosiates.com/admin";
+	Assert.assertEquals(actual,expected,"Login is not successful");
 }
 @Test(priority = 2,description = "Login with Invalid Username")
 public void verifyLoginWithInvalidUsername() throws IOException {
@@ -28,6 +33,9 @@ public void verifyLoginWithInvalidUsername() throws IOException {
 	loginpage.enterUserName(usernameValue);
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();
+	String actual = driver.getCurrentUrl();
+	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
+	Assert.assertEquals(actual,expected,"Login is not successful");
 }
 @Test(priority = 3,description="Login with Invalid Password")
 public void verifyLoginWithInvalidPassword() throws IOException {
@@ -37,6 +45,10 @@ public void verifyLoginWithInvalidPassword() throws IOException {
 	loginpage.enterUserName(usernameValue);
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();
+	String actual = driver.getCurrentUrl();
+	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
+	Assert.assertEquals(actual,expected,"Login is not successful");
+	
 }
 @Test(priority = 4,description="Login with Invalid Username and Invalid Password")
 public void verifyLoginWithInvalidUsernameInvalidPassword() throws IOException {
@@ -46,6 +58,9 @@ public void verifyLoginWithInvalidUsernameInvalidPassword() throws IOException {
 	loginpage.enterUserName(usernameValue);
 	loginpage.enterPassword(passwordValue);
 	loginpage.clickOnSignIn();
+	String actual = driver.getCurrentUrl();
+	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
+	Assert.assertEquals(actual,expected,"Login is not successful");
 }
 }
 
