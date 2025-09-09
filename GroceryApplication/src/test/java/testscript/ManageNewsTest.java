@@ -1,5 +1,7 @@
 package testscript;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -8,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.TestNgBase;
+import constants.Constants;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 import utilities.ExcelUtility;
@@ -16,8 +19,8 @@ public class ManageNewsTest extends TestNgBase{
 	@Test(description = "Verify User is able to Add News")
 	public void verifyAddNews() throws IOException {
 	
-	String usernameValue=ExcelUtility.getStringData(6, 0, "LoginPage");
-	String passwordValue=ExcelUtility.getStringData(6, 1, "LoginPage");
+	String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
+	String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
 	loginpage.enterUserName(usernameValue);
 	loginpage.enterPassword(passwordValue);
@@ -35,8 +38,8 @@ public class ManageNewsTest extends TestNgBase{
 	@Test(description = "Verify User is able to Return to Home Page")
 	public void verifyReturnToHome() throws IOException {
 
-		String usernameValue=ExcelUtility.getStringData(6, 0, "LoginPage");
-		String passwordValue=ExcelUtility.getStringData(6, 1, "LoginPage");
+		String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
+		String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUserName(usernameValue);
 		loginpage.enterPassword(passwordValue);
@@ -52,8 +55,8 @@ public class ManageNewsTest extends TestNgBase{
 	}
 	@Test(description = "Verify User is able to Search News")
 	public void verifySearchNews() throws IOException {
-		String usernameValue=ExcelUtility.getStringData(6, 0, "LoginPage");
-		String passwordValue=ExcelUtility.getStringData(6, 1, "LoginPage");
+		String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
+		String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUserName(usernameValue);
 		loginpage.enterPassword(passwordValue);
@@ -70,8 +73,8 @@ public class ManageNewsTest extends TestNgBase{
 	}
 	@Test(description = "Verify User is able to Reset")
 	public void verifyReset() throws IOException {
-		String usernameValue=ExcelUtility.getStringData(6, 0, "LoginPage");
-		String passwordValue=ExcelUtility.getStringData(6, 1, "LoginPage");
+		String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
+		String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 		LoginPage loginpage = new LoginPage(driver);
 		loginpage.enterUserName(usernameValue);
 		loginpage.enterPassword(passwordValue);

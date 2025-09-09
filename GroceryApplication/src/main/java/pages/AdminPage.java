@@ -40,14 +40,15 @@ public class AdminPage {
 	}
 	@FindBy(xpath="//button[@type='submit' and @name = 'Create']")WebElement saveButton;
 	public void clickSave() {
+		
 		saveButton.click();
 	}
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement addUserAlert;
 	public boolean isAlertDisplayed() {
-		{
+		
 			return addUserAlert.isDisplayed();
 		}
 		
 		}
-	}
+	
 
