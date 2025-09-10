@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import base.TestNgBase;
 import constants.Constants;
+import constants.Messages;
 import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
@@ -30,6 +31,6 @@ public void verifyLogout() throws IOException {
 	homepage.clickLogoutButton();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
-	Assert.assertEquals(actual,expected,"Log out is not successful");
+	Assert.assertEquals(actual,expected,Messages.LOGOUT);
 }
 }

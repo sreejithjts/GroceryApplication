@@ -39,7 +39,7 @@ public class ExcelUtility {
 
 		public static String getIntegerData(int a,int b,String sheet) throws IOException {
 
-		f=new FileInputStream("C:\\Users\\Sreejith\\git\\GroceryApplication\\GroceryApplication\\src\\test\\resources\\TestData.xlsx");
+		f=new FileInputStream(Constants.TESTDATAFILE);
 		
 		w=new XSSFWorkbook(f);
 

@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 import base.TestNgBase;
 import constants.Constants;
+import constants.Messages;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 import utilities.ExcelUtility;
@@ -33,7 +34,7 @@ public class ManageNewsTest extends TestNgBase{
 	managenewspage.enterNewsTextbox();
 	managenewspage.clickSaveButton();
 	boolean isAlertDisplayed = managenewspage.isAlertDisplayed();
-	Assert.assertTrue(isAlertDisplayed,"Unable to add the News");
+	Assert.assertTrue(isAlertDisplayed,Messages.ADDNEWS);
 }
 	@Test(description = "Verify User is able to Return to Home Page")
 	public void verifyReturnToHome() throws IOException {
@@ -50,7 +51,7 @@ public class ManageNewsTest extends TestNgBase{
 		managenewspage.clickHome();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/home";
-		Assert.assertEquals(actual,expected,"Home button Not successful");
+		Assert.assertEquals(actual,expected,Messages.RETURNTOHOME);
 		
 	}
 	@Test(description = "Verify User is able to Search News")
@@ -69,7 +70,7 @@ public class ManageNewsTest extends TestNgBase{
 		managenewspage.searchButtonClick();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/news/index";
-		Assert.assertEquals(actual,expected,"Search News Not Successful");
+		Assert.assertEquals(actual,expected,Messages.SEARCHNEWS);
 	}
 	@Test(description = "Verify User is able to Reset")
 	public void verifyReset() throws IOException {
@@ -86,7 +87,7 @@ public class ManageNewsTest extends TestNgBase{
 		managenewspage.searchResetClick();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/list-news";
-		Assert.assertEquals(actual,expected,"Reset Not Successful");
+		Assert.assertEquals(actual,expected,Messages.RESET);
 		
 	}
 }

@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 
 import base.TestNgBase;
 import constants.Constants;
+import constants.Messages;
 import pages.AdminPage;
 import utilities.ExcelUtility;
 import utilities.FakerUtility;
@@ -41,7 +42,7 @@ public class AdminTest extends TestNgBase {
 		adminpage.enterUserType(userType);
 		adminpage.clickSave();
 		boolean isAlertDisplayed = adminpage.isAlertDisplayed();
-		Assert.assertTrue(isAlertDisplayed,"User is not added successfully");
+		Assert.assertTrue(isAlertDisplayed,Messages.ADDUSERADMIN);
 	}
 
 }
