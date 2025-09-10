@@ -31,6 +31,6 @@ public void verifyLogout() throws IOException {
 	homepage.clickLogoutButton();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
-	Assert.assertEquals(actual,expected,Messages.LOGOUT);
+	Assert.assertEquals(actual,expected,Messages.LOGOUTERROR);
 }
 }

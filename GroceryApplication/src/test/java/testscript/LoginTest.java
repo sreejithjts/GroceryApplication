@@ -64,7 +64,7 @@ public void verifyLoginWithInvalidUsernameInvalidPassword() throws IOException {
 	loginpage.clickOnSignIn();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
-	Assert.assertEquals(actual,expected,Messages.INVALIDUSERNAMEANDPPASSWORD);
+	Assert.assertEquals(actual,expected,Messages.INVALIDUSERNAMEANDPPASSWORDERROR);
 }
 }
 

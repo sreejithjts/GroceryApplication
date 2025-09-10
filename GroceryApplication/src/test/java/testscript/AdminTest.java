@@ -42,7 +42,7 @@ public class AdminTest extends TestNgBase {
 		adminpage.enterUserType(userType);
 		adminpage.clickSave();
 		boolean isAlertDisplayed = adminpage.isAlertDisplayed();
-		Assert.assertTrue(isAlertDisplayed,Messages.ADDUSERADMIN);
+		Assert.assertTrue(isAlertDisplayed,Messages.ADDUSERADMINERROR);
 	}
 
 }
