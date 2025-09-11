@@ -16,7 +16,7 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends TestNgBase {
-@Test(priority = 1,description = "Login with valid credentials")
+@Test(priority = 1,description = "Login with valid credentials",retryAnalyzer = retry.Retry.class)
 public void verifyLoginWithValidCredentials() throws IOException{
 	String usernameValue=ExcelUtility.getStringData(1, 0, Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(1, 1, Constants.LOGINSHEET);

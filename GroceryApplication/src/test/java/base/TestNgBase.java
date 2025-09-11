@@ -1,6 +1,7 @@
 package base;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +32,7 @@ public void browserInitializer() {
 	
 	driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 }
 @AfterMethod
 public void quitAndClose() {
