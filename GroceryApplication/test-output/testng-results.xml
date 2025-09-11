@@ -1,60 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results retried="2" ignored="2" total="14" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-10T10:25:29 IST" name="Suite" finished-at="2025-09-10T10:26:24 IST" duration-ms="54827">
+  <suite started-at="2025-09-11T10:16:46 IST" name="Suite" finished-at="2025-09-11T10:17:52 IST" duration-ms="65755">
     <groups>
     </groups>
-    <test started-at="2025-09-10T10:25:29 IST" name="Test" finished-at="2025-09-10T10:26:24 IST" duration-ms="54827">
+    <test started-at="2025-09-11T10:16:46 IST" name="Test" finished-at="2025-09-11T10:17:52 IST" duration-ms="65755">
       <class name="testscript.ManageNewsTest">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:40 IST" name="browserInitializer" finished-at="2025-09-10T10:25:43 IST" duration-ms="3282" status="PASS">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:16:55 IST" name="browserInitializer" finished-at="2025-09-11T10:16:59 IST" duration-ms="3559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyAddNews()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:43 IST" name="verifyAddNews" description="Verify User is able to Add News" finished-at="2025-09-10T10:25:45 IST" duration-ms="2053" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="verifyAddNews()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:16:59 IST" name="verifyAddNews" description="Verify User is able to Add News" finished-at="2025-09-11T10:17:02 IST" duration-ms="3518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:02 IST" name="driverQuit" finished-at="2025-09-11T10:17:03 IST" duration-ms="506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddNews status=SUCCESS method=ManageNewsTest.verifyAddNews()[pri:0, instance:testscript.ManageNewsTest@5443d039] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:03 IST" name="quitAndClose" finished-at="2025-09-11T10:17:03 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:03 IST" name="browserInitializer" finished-at="2025-09-11T10:17:06 IST" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifyReset()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:06 IST" name="verifyReset" description="Verify User is able to Reset" finished-at="2025-09-11T10:17:08 IST" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReset -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:08 IST" name="driverQuit" finished-at="2025-09-11T10:17:08 IST" duration-ms="376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyReset status=SUCCESS method=ManageNewsTest.verifyReset()[pri:0, instance:testscript.ManageNewsTest@5443d039] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:08 IST" name="quitAndClose" finished-at="2025-09-11T10:17:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:08 IST" name="browserInitializer" finished-at="2025-09-11T10:17:11 IST" duration-ms="3031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifyReturnToHome()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:11 IST" name="verifyReturnToHome" description="Verify User is able to Return to Home Page" finished-at="2025-09-11T10:17:13 IST" duration-ms="1709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReturnToHome -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:13 IST" name="driverQuit" finished-at="2025-09-11T10:17:13 IST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyReturnToHome status=SUCCESS method=ManageNewsTest.verifyReturnToHome()[pri:0, instance:testscript.ManageNewsTest@5443d039] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:13 IST" name="quitAndClose" finished-at="2025-09-11T10:17:13 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:13 IST" name="browserInitializer" finished-at="2025-09-11T10:17:16 IST" duration-ms="2971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifySearchNews()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:16 IST" name="verifySearchNews" description="Verify User is able to Search News" finished-at="2025-09-11T10:17:19 IST" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySearchNews -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:19 IST" name="driverQuit" finished-at="2025-09-11T10:17:19 IST" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifySearchNews status=SUCCESS method=ManageNewsTest.verifySearchNews()[pri:0, instance:testscript.ManageNewsTest@5443d039] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@5443d039]" started-at="2025-09-11T10:17:19 IST" name="quitAndClose" finished-at="2025-09-11T10:17:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+      </class> <!-- testscript.ManageNewsTest -->
+      <class name="testscript.HomeTest">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.HomeTest@49964d75]" started-at="2025-09-11T10:16:46 IST" name="browserInitializer" finished-at="2025-09-11T10:16:51 IST" duration-ms="4240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifyLogout()[pri:0, instance:testscript.HomeTest@49964d75]" started-at="2025-09-11T10:16:51 IST" name="verifyLogout" description="Verify User is able to Logout" finished-at="2025-09-11T10:16:55 IST" duration-ms="3951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.HomeTest@49964d75]" started-at="2025-09-11T10:16:55 IST" name="driverQuit" finished-at="2025-09-11T10:16:55 IST" duration-ms="480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=HomeTest.verifyLogout()[pri:0, instance:testscript.HomeTest@49964d75] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.HomeTest@49964d75]" started-at="2025-09-11T10:16:55 IST" name="quitAndClose" finished-at="2025-09-11T10:16:55 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+      </class> <!-- testscript.HomeTest -->
+      <class name="testscript.AdminTest">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.AdminTest@63787180]" started-at="2025-09-11T10:17:19 IST" name="browserInitializer" finished-at="2025-09-11T10:17:21 IST" duration-ms="2342" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifyAddUser()[pri:0, instance:testscript.AdminTest@63787180]" started-at="2025-09-11T10:17:21 IST" name="verifyAddUser" description="Verify Add New Users in the Admin" finished-at="2025-09-11T10:17:25 IST" duration-ms="4056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddUser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@63787180]" started-at="2025-09-11T10:17:25 IST" name="driverQuit" finished-at="2025-09-11T10:17:26 IST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyAddUser status=SUCCESS method=AdminTest.verifyAddUser()[pri:0, instance:testscript.AdminTest@63787180] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.AdminTest@63787180]" started-at="2025-09-11T10:17:26 IST" name="quitAndClose" finished-at="2025-09-11T10:17:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+      </class> <!-- testscript.AdminTest -->
+      <class name="testscript.LoginTest">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:26 IST" name="browserInitializer" finished-at="2025-09-11T10:17:30 IST" duration-ms="4005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method retried="true" signature="verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:30 IST" name="verifyLoginWithValidCredentials" description="Login with valid credentials" finished-at="2025-09-11T10:17:30 IST" duration-ms="780" status="SKIP">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=138.0.7204.185)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [687a92aa72219f05d81ed1fefaea3559, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Sreejith\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58522/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 687a92aa72219f05d81ed1fefaea3559]]>
+              <![CDATA[Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='alert alert-success alert-dismissible']"}
-  (Session info: chrome=138.0.7204.185)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.33.0', revision: '2c6aaad03a'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [687a92aa72219f05d81ed1fefaea3559, findElement {using=xpath, value=//div[@class='alert alert-success alert-dismissible']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Sreejith\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58522/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 687a92aa72219f05d81ed1fefaea3559
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
-at pages.ManageNewsPage.isAlertDisplayed(ManageNewsPage.java:53)
-at testscript.ManageNewsTest.verifyAddNews(ManageNewsTest.java:35)
+              <![CDATA[java.lang.AssertionError: Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testscript.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,235 +198,223 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:45 IST" name="driverQuit" finished-at="2025-09-10T10:25:46 IST" duration-ms="709" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddNews status=FAILURE method=ManageNewsTest.verifyAddNews()[pri:0, instance:testscript.ManageNewsTest@2e1ef60] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:46 IST" name="quitAndClose" finished-at="2025-09-10T10:25:46 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAndClose -->
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:46 IST" name="browserInitializer" finished-at="2025-09-10T10:25:49 IST" duration-ms="2870" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyReset()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:49 IST" name="verifyReset" description="Verify User is able to Reset" finished-at="2025-09-10T10:25:50 IST" duration-ms="1769" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyReset -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:50 IST" name="driverQuit" finished-at="2025-09-10T10:25:51 IST" duration-ms="388" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyReset status=SUCCESS method=ManageNewsTest.verifyReset()[pri:0, instance:testscript.ManageNewsTest@2e1ef60] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:51 IST" name="quitAndClose" finished-at="2025-09-10T10:25:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAndClose -->
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:51 IST" name="browserInitializer" finished-at="2025-09-10T10:25:54 IST" duration-ms="2742" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyReturnToHome()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:54 IST" name="verifyReturnToHome" description="Verify User is able to Return to Home Page" finished-at="2025-09-10T10:25:55 IST" duration-ms="1745" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyReturnToHome -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:55 IST" name="driverQuit" finished-at="2025-09-10T10:25:56 IST" duration-ms="259" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyReturnToHome status=SUCCESS method=ManageNewsTest.verifyReturnToHome()[pri:0, instance:testscript.ManageNewsTest@2e1ef60] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:56 IST" name="quitAndClose" finished-at="2025-09-10T10:25:56 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAndClose -->
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:56 IST" name="browserInitializer" finished-at="2025-09-10T10:25:58 IST" duration-ms="2844" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="verifySearchNews()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:25:58 IST" name="verifySearchNews" description="Verify User is able to Search News" finished-at="2025-09-10T10:26:00 IST" duration-ms="1950" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySearchNews -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:26:00 IST" name="driverQuit" finished-at="2025-09-10T10:26:01 IST" duration-ms="246" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifySearchNews status=SUCCESS method=ManageNewsTest.verifySearchNews()[pri:0, instance:testscript.ManageNewsTest@2e1ef60] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.ManageNewsTest@2e1ef60]" started-at="2025-09-10T10:26:01 IST" name="quitAndClose" finished-at="2025-09-10T10:26:01 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAndClose -->
-      </class> <!-- testscript.ManageNewsTest -->
-      <class name="testscript.HomeTest">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.HomeTest@5ce8d869]" started-at="2025-09-10T10:25:29 IST" name="browserInitializer" finished-at="2025-09-10T10:25:35 IST" duration-ms="6088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyLogout()[pri:0, instance:testscript.HomeTest@5ce8d869]" started-at="2025-09-10T10:25:35 IST" name="verifyLogout" description="Verify User is able to Logout" finished-at="2025-09-10T10:25:39 IST" duration-ms="3873" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.HomeTest@5ce8d869]" started-at="2025-09-10T10:25:39 IST" name="driverQuit" finished-at="2025-09-10T10:25:40 IST" duration-ms="293" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=HomeTest.verifyLogout()[pri:0, instance:testscript.HomeTest@5ce8d869] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.HomeTest@5ce8d869]" started-at="2025-09-10T10:25:40 IST" name="quitAndClose" finished-at="2025-09-10T10:25:40 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAndClose -->
-      </class> <!-- testscript.HomeTest -->
-      <class name="testscript.AdminTest">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.AdminTest@22356acd]" started-at="2025-09-10T10:26:01 IST" name="browserInitializer" finished-at="2025-09-10T10:26:03 IST" duration-ms="2659" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyAddUser()[pri:0, instance:testscript.AdminTest@22356acd]" started-at="2025-09-10T10:26:03 IST" name="verifyAddUser" description="Verify Add New Users in the Admin" finished-at="2025-09-10T10:26:07 IST" duration-ms="3854" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddUser -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@22356acd]" started-at="2025-09-10T10:26:07 IST" name="driverQuit" finished-at="2025-09-10T10:26:07 IST" duration-ms="245" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddUser status=SUCCESS method=AdminTest.verifyAddUser()[pri:0, instance:testscript.AdminTest@22356acd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.AdminTest@22356acd]" started-at="2025-09-10T10:26:07 IST" name="quitAndClose" finished-at="2025-09-10T10:26:07 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitAndClose -->
-      </class> <!-- testscript.AdminTest -->
-      <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:07 IST" name="browserInitializer" finished-at="2025-09-10T10:26:10 IST" duration-ms="2731" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:10 IST" name="verifyLoginWithValidCredentials" description="Login with valid credentials" finished-at="2025-09-10T10:26:11 IST" duration-ms="1157" status="PASS">
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:11 IST" name="driverQuit" finished-at="2025-09-10T10:26:12 IST" duration-ms="330" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:30 IST" name="driverQuit" finished-at="2025-09-11T10:17:31 IST" duration-ms="317" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@386f0da3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SKIP method=LoginTest.verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@7d1cfb8b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:12 IST" name="quitAndClose" finished-at="2025-09-10T10:26:12 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:31 IST" name="quitAndClose" finished-at="2025-09-11T10:17:31 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitAndClose -->
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:12 IST" name="browserInitializer" finished-at="2025-09-10T10:26:14 IST" duration-ms="2454" status="PASS">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:31 IST" name="browserInitializer" finished-at="2025-09-11T10:17:33 IST" duration-ms="2592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyLoginWithInvalidUsername()[pri:2, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:14 IST" name="verifyLoginWithInvalidUsername" description="Login with Invalid Username" finished-at="2025-09-10T10:26:15 IST" duration-ms="1040" status="PASS">
+        <test-method retried="true" signature="verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:33 IST" name="verifyLoginWithValidCredentials" description="Login with valid credentials" finished-at="2025-09-11T10:17:34 IST" duration-ms="955" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testscript.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:34 IST" name="driverQuit" finished-at="2025-09-11T10:17:35 IST" duration-ms="370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=SKIP method=LoginTest.verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@7d1cfb8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:35 IST" name="quitAndClose" finished-at="2025-09-11T10:17:35 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:35 IST" name="browserInitializer" finished-at="2025-09-11T10:17:38 IST" duration-ms="2994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:38 IST" name="verifyLoginWithValidCredentials" description="Login with valid credentials" finished-at="2025-09-11T10:17:39 IST" duration-ms="978" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testscript.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:39 IST" name="driverQuit" finished-at="2025-09-11T10:17:39 IST" duration-ms="528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidCredentials status=FAILURE method=LoginTest.verifyLoginWithValidCredentials()[pri:1, instance:testscript.LoginTest@7d1cfb8b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:39 IST" name="quitAndClose" finished-at="2025-09-11T10:17:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitAndClose -->
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:39 IST" name="browserInitializer" finished-at="2025-09-11T10:17:42 IST" duration-ms="3285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitializer -->
+        <test-method signature="verifyLoginWithInvalidUsername()[pri:2, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:42 IST" name="verifyLoginWithInvalidUsername" description="Login with Invalid Username" finished-at="2025-09-11T10:17:43 IST" duration-ms="981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithInvalidUsername -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:15 IST" name="driverQuit" finished-at="2025-09-10T10:26:15 IST" duration-ms="356" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:43 IST" name="driverQuit" finished-at="2025-09-11T10:17:44 IST" duration-ms="703" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidUsername status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsername()[pri:2, instance:testscript.LoginTest@386f0da3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginWithInvalidUsername status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsername()[pri:2, instance:testscript.LoginTest@7d1cfb8b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:15 IST" name="quitAndClose" finished-at="2025-09-10T10:26:15 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:44 IST" name="quitAndClose" finished-at="2025-09-11T10:17:44 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitAndClose -->
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:15 IST" name="browserInitializer" finished-at="2025-09-10T10:26:18 IST" duration-ms="2949" status="PASS">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:44 IST" name="browserInitializer" finished-at="2025-09-11T10:17:47 IST" duration-ms="2830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyLoginWithInvalidPassword()[pri:3, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:18 IST" name="verifyLoginWithInvalidPassword" description="Login with Invalid Password" finished-at="2025-09-10T10:26:19 IST" duration-ms="847" status="PASS">
+        <test-method signature="verifyLoginWithInvalidPassword()[pri:3, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:47 IST" name="verifyLoginWithInvalidPassword" description="Login with Invalid Password" finished-at="2025-09-11T10:17:48 IST" duration-ms="741" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:19 IST" name="driverQuit" finished-at="2025-09-10T10:26:20 IST" duration-ms="354" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:48 IST" name="driverQuit" finished-at="2025-09-11T10:17:48 IST" duration-ms="333" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidPassword()[pri:3, instance:testscript.LoginTest@386f0da3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginWithInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidPassword()[pri:3, instance:testscript.LoginTest@7d1cfb8b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:20 IST" name="quitAndClose" finished-at="2025-09-10T10:26:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:48 IST" name="quitAndClose" finished-at="2025-09-11T10:17:48 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitAndClose -->
-        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:20 IST" name="browserInitializer" finished-at="2025-09-10T10:26:23 IST" duration-ms="3291" status="PASS">
+        <test-method is-config="true" signature="browserInitializer()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:48 IST" name="browserInitializer" finished-at="2025-09-11T10:17:51 IST" duration-ms="2843" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitializer -->
-        <test-method signature="verifyLoginWithInvalidUsernameInvalidPassword()[pri:4, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:23 IST" name="verifyLoginWithInvalidUsernameInvalidPassword" description="Login with Invalid Username and Invalid Password" finished-at="2025-09-10T10:26:24 IST" duration-ms="957" status="PASS">
+        <test-method signature="verifyLoginWithInvalidUsernameInvalidPassword()[pri:4, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:51 IST" name="verifyLoginWithInvalidUsernameInvalidPassword" description="Login with Invalid Username and Invalid Password" finished-at="2025-09-11T10:17:52 IST" duration-ms="803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithInvalidUsernameInvalidPassword -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:24 IST" name="driverQuit" finished-at="2025-09-10T10:26:24 IST" duration-ms="281" status="PASS">
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:52 IST" name="driverQuit" finished-at="2025-09-11T10:17:52 IST" duration-ms="451" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsernameInvalidPassword()[pri:4, instance:testscript.LoginTest@386f0da3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInvalidUsernameInvalidPassword()[pri:4, instance:testscript.LoginTest@7d1cfb8b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@386f0da3]" started-at="2025-09-10T10:26:24 IST" name="quitAndClose" finished-at="2025-09-10T10:26:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="quitAndClose()[pri:0, instance:testscript.LoginTest@7d1cfb8b]" started-at="2025-09-11T10:17:52 IST" name="quitAndClose" finished-at="2025-09-11T10:17:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitAndClose -->

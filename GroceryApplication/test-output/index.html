@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,  2 skipped,  9 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,10 +103,29 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyAddNews">verifyAddNews</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,6 +134,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testscript.ManageNewsTest" class="method navigator-link" hash-for-method="verifyAddNews">verifyAddNews</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.AdminTest" class="method navigator-link" hash-for-method="verifyAddUser">verifyAddUser</a> <!-- method navigator-link -->
@@ -133,11 +157,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidUsernameInvalidPassword">verifyLoginWithInvalidUsernameInvalidPassword</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testscript.LoginTest" class="method navigator-link" hash-for-method="verifyLoginWithValidCredentials">verifyLoginWithValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -175,6 +194,64 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials">
+                  </a> <!-- verifyLoginWithValidCredentials -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
+	at testscript.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testscript.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials">
+                  </a> <!-- verifyLoginWithValidCredentials -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
+	at testscript.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginWithValidCredentials">
+                  </a> <!-- verifyLoginWithValidCredentials -->
+                  <span class="method-name">verifyLoginWithValidCredentials</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login is not successful expected [https://groceryapp.uniqassosiates.com/admin] but found [https://groceryapp.uniqassosiates.com/admin/login]
+	at testscript.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Login with valid credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testscript.ManageNewsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -183,40 +260,56 @@
                   <a name="verifyAddNews">
                   </a> <!-- verifyAddNews -->
                   <span class="method-name">verifyAddNews</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;alert alert-success alert-dismissible&apos;]&quot;}
-  (Session info: chrome=138.0.7204.185)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [687a92aa72219f05d81ed1fefaea3559, findElement {using=xpath, value=//div[@class=&apos;alert alert-success alert-dismissible&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.185, chrome: {chromedriverVersion: 138.0.7204.183 (e90faf484dd..., userDataDir: C:\Users\Sreejith\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58522}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58522/devtoo..., se:cdpVersion: 138.0.7204.185, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 687a92aa72219f05d81ed1fefaea3559
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.isDisplayed(Unknown Source)
-	at pages.ManageNewsPage.isAlertDisplayed(ManageNewsPage.java:53)
-	at testscript.ManageNewsTest.verifyAddNews(ManageNewsTest.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Verify User is able to Add News)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReset">
+                  </a> <!-- verifyReset -->
+                  <span class="method-name">verifyReset</span>
+                  <em>
+(Verify User is able to Reset)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyReturnToHome">
+                  </a> <!-- verifyReturnToHome -->
+                  <span class="method-name">verifyReturnToHome</span>
+                  <em>
+(Verify User is able to Return to Home Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySearchNews">
+                  </a> <!-- verifySearchNews -->
+                  <span class="method-name">verifySearchNews</span>
+                  <em>
+(Verify User is able to Search News)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testscript.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogout">
+                  </a> <!-- verifyLogout -->
+                  <span class="method-name">verifyLogout</span>
+                  <em>
+(Verify User is able to Logout)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -250,15 +343,6 @@ Session ID: 687a92aa72219f05d81ed1fefaea3559
 (Login with Invalid Username and Invalid Password)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithValidCredentials">
-                  </a> <!-- verifyLoginWithValidCredentials -->
-                  <span class="method-name">verifyLoginWithValidCredentials</span>
-                  <em>
-(Login with valid credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
@@ -274,58 +358,6 @@ Session ID: 687a92aa72219f05d81ed1fefaea3559
                   <span class="method-name">verifyAddUser</span>
                   <em>
 (Verify Add New Users in the Admin)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.HomeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLogout">
-                  </a> <!-- verifyLogout -->
-                  <span class="method-name">verifyLogout</span>
-                  <em>
-(Verify User is able to Logout)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testscript.ManageNewsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyReset">
-                  </a> <!-- verifyReset -->
-                  <span class="method-name">verifyReset</span>
-                  <em>
-(Verify User is able to Reset)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyReturnToHome">
-                  </a> <!-- verifyReturnToHome -->
-                  <span class="method-name">verifyReturnToHome</span>
-                  <em>
-(Verify User is able to Return to Home Page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySearchNews">
-                  </a> <!-- verifySearchNews -->
-                  <span class="method-name">verifySearchNews</span>
-                  <em>
-(Verify User is able to Search News)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -388,52 +420,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLogout')
-data.setCell(0, 2, 'testscript.HomeTest')
-data.setCell(0, 3, 3873);
+data.setCell(0, 1, 'verifyAddUser')
+data.setCell(0, 2, 'testscript.AdminTest')
+data.setCell(0, 3, 4056);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyAddUser')
-data.setCell(1, 2, 'testscript.AdminTest')
-data.setCell(1, 3, 3854);
+data.setCell(1, 1, 'verifyLogout')
+data.setCell(1, 2, 'testscript.HomeTest')
+data.setCell(1, 3, 3951);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyAddNews')
 data.setCell(2, 2, 'testscript.ManageNewsTest')
-data.setCell(2, 3, 2053);
+data.setCell(2, 3, 3518);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifySearchNews')
 data.setCell(3, 2, 'testscript.ManageNewsTest')
-data.setCell(3, 3, 1950);
+data.setCell(3, 3, 2131);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyReset')
 data.setCell(4, 2, 'testscript.ManageNewsTest')
-data.setCell(4, 3, 1769);
+data.setCell(4, 3, 2118);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyReturnToHome')
 data.setCell(5, 2, 'testscript.ManageNewsTest')
-data.setCell(5, 3, 1745);
+data.setCell(5, 3, 1709);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyLoginWithValidCredentials')
+data.setCell(6, 1, 'verifyLoginWithInvalidUsername')
 data.setCell(6, 2, 'testscript.LoginTest')
-data.setCell(6, 3, 1157);
+data.setCell(6, 3, 981);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyLoginWithInvalidUsername')
+data.setCell(7, 1, 'verifyLoginWithValidCredentials')
 data.setCell(7, 2, 'testscript.LoginTest')
-data.setCell(7, 3, 1040);
+data.setCell(7, 3, 978);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
+data.setCell(8, 1, 'verifyLoginWithValidCredentials')
 data.setCell(8, 2, 'testscript.LoginTest')
-data.setCell(8, 3, 957);
+data.setCell(8, 3, 955);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyLoginWithInvalidPassword')
+data.setCell(9, 1, 'verifyLoginWithInvalidUsernameInvalidPassword')
 data.setCell(9, 2, 'testscript.LoginTest')
-data.setCell(9, 3, 847);
+data.setCell(9, 3, 803);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyLoginWithValidCredentials')
+data.setCell(10, 2, 'testscript.LoginTest')
+data.setCell(10, 3, 780);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyLoginWithInvalidPassword')
+data.setCell(11, 2, 'testscript.LoginTest')
+data.setCell(11, 3, 741);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -466,170 +506,202 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogout</span>
-                <span class="method-start">6091 ms</span>
+                <span class="method-start">4244 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLogout status=SUCCESS method=HomeTest.verifyLogout()[pri:0, instance:testscri...)</span>
-                <span class="method-start">9973 ms</span>
+                <span class="method-start">8206 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">10266 ms</span>
+                <span class="method-start">8687 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.ManageNewsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">10271 ms</span>
+                <span class="method-start">8692 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verifyAddNews</span>
-                <span class="method-start">13553 ms</span>
+                <span class="method-start">12252 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyAddNews status=FAILURE method=ManageNewsTest.verifyAddNews()[pri:0, instance:...)</span>
-                <span class="method-start">15644 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyAddNews status=SUCCESS method=ManageNewsTest.verifyAddNews()[pri:0, instance:...)</span>
+                <span class="method-start">15773 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">16353 ms</span>
+                <span class="method-start">16279 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">16354 ms</span>
+                <span class="method-start">16281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyReset</span>
-                <span class="method-start">19224 ms</span>
+                <span class="method-start">19440 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyReset status=SUCCESS method=ManageNewsTest.verifyReset()[pri:0, instance:test...)</span>
-                <span class="method-start">20996 ms</span>
+                <span class="method-start">21561 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">21384 ms</span>
+                <span class="method-start">21937 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">21386 ms</span>
+                <span class="method-start">21939 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyReturnToHome</span>
-                <span class="method-start">24128 ms</span>
+                <span class="method-start">24970 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyReturnToHome status=SUCCESS method=ManageNewsTest.verifyReturnToHome()[pri:0,...)</span>
-                <span class="method-start">25875 ms</span>
+                <span class="method-start">26681 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">26134 ms</span>
+                <span class="method-start">26946 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">26137 ms</span>
+                <span class="method-start">26948 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySearchNews</span>
-                <span class="method-start">28981 ms</span>
+                <span class="method-start">29919 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifySearchNews status=SUCCESS method=ManageNewsTest.verifySearchNews()[pri:0, ins...)</span>
-                <span class="method-start">30932 ms</span>
+                <span class="method-start">32052 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">31178 ms</span>
+                <span class="method-start">32337 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.AdminTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">31180 ms</span>
+                <span class="method-start">32338 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyAddUser</span>
-                <span class="method-start">33840 ms</span>
+                <span class="method-start">34681 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyAddUser status=SUCCESS method=AdminTest.verifyAddUser()[pri:0, instance:tests...)</span>
-                <span class="method-start">37695 ms</span>
+                <span class="method-start">38739 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">37941 ms</span>
+                <span class="method-start">39087 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testscript.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">37942 ms</span>
+                <span class="method-start">39089 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithValidCredentials</span>
-                <span class="method-start">40674 ms</span>
+                <span class="method-start">43094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyLoginWithValidCredentials status=SUCCESS method=LoginTest.verifyLoginWithVali...)</span>
-                <span class="method-start">41834 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyLoginWithValidCredentials status=SKIP method=LoginTest.verifyLoginWithValidCr...)</span>
+                <span class="method-start">43877 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">42165 ms</span>
+                <span class="method-start">44194 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">42170 ms</span>
+                <span class="method-start">44196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginWithValidCredentials</span>
+                <span class="method-start">46788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyLoginWithValidCredentials status=SKIP method=LoginTest.verifyLoginWithValidCr...)</span>
+                <span class="method-start">47757 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quitAndClose</span>
+                <span class="method-start">48127 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitializer</span>
+                <span class="method-start">48128 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginWithValidCredentials</span>
+                <span class="method-start">51123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyLoginWithValidCredentials status=FAILURE method=LoginTest.verifyLoginWithVali...)</span>
+                <span class="method-start">52132 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quitAndClose</span>
+                <span class="method-start">52661 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserInitializer</span>
+                <span class="method-start">52663 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidUsername</span>
-                <span class="method-start">44624 ms</span>
+                <span class="method-start">55948 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLoginWithInvalidUsername status=SUCCESS method=LoginTest.verifyLoginWithInval...)</span>
-                <span class="method-start">45669 ms</span>
+                <span class="method-start">56930 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">46026 ms</span>
+                <span class="method-start">57634 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">46027 ms</span>
+                <span class="method-start">57636 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidPassword</span>
-                <span class="method-start">48976 ms</span>
+                <span class="method-start">60466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLoginWithInvalidPassword status=SUCCESS method=LoginTest.verifyLoginWithInval...)</span>
-                <span class="method-start">49826 ms</span>
+                <span class="method-start">61209 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">50180 ms</span>
+                <span class="method-start">61542 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserInitializer</span>
-                <span class="method-start">50182 ms</span>
+                <span class="method-start">61543 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginWithInvalidUsernameInvalidPassword</span>
-                <span class="method-start">53473 ms</span>
+                <span class="method-start">64387 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">driverQuit([TestResult name=verifyLoginWithInvalidUsernameInvalidPassword status=SUCCESS method=LoginTest.verif...)</span>
-                <span class="method-start">54435 ms</span>
+                <span class="method-start">65192 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitAndClose</span>
-                <span class="method-start">54717 ms</span>
+                <span class="method-start">65643 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
