@@ -13,8 +13,8 @@ public class PageUtility {
 		element.click();
 	}
 	public void selectDataWithVisibleText(WebElement element,String text) {
-		Select select = new Select(userTypefield);
-		select.selectByVisibleText(userType);
+		Select select = new Select(element);
+		select.selectByVisibleText(text);
 	}
 	public void scrollToElement(WebDriver driver, WebElement element) {
 	    Actions actions=new Actions(driver);

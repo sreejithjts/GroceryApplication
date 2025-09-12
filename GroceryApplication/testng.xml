@@ -9,14 +9,14 @@
   <test thread-count="5" name="Test">
     <classes>
 <!-- HomeTest will be executed first when we run testng.xml-->
-     <!-- <class name="testScript.HomeTest"/> -->
-      <!-- <class name="testScript.ManageNewsTest"/> -->
-      <class name="testScript.LoginTest">
+     <!-- <class name="testscript.HomeTest"/> -->
+      <!-- <class name="testscript.ManageNewsTest"/> -->
+      <class name="testscript.LoginTest">
       <methods>
       <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
       </methods>
       </class>
-     <!-- <class name="testScript.AdminTest"/>-->
+     <!-- <class name="testscript.AdminTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

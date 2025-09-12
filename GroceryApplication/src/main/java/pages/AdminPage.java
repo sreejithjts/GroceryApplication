@@ -18,34 +18,39 @@ public class AdminPage {
 	}
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement adminMoreInfo;
 	public void clickAdminMoreInfo() {
-		adminMoreInfo.click();
+		//adminMoreInfo.click();
+		pageUtility.clickElement(adminMoreInfo);
 	}
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newbutton;
 	public void clickNewButton()
 	{
-		newbutton.click();
+		//newbutton.click();
+		pageUtility.clickElement(newbutton);
 	}
 	@FindBy(xpath="//input[@id='username']")WebElement usernamefield;
 	public void enterUsername(String randomname)
 	{
-		usernamefield.sendKeys(randomname);
+		//usernamefield.sendKeys(randomname);
+		pageUtility.sendDataToElement(usernamefield, randomname);
 	}
 	@FindBy(xpath="//input[@id='password']")WebElement passwordfield;
 	public void enterPassword(String randompassword)
 	{
-		passwordfield.sendKeys(randompassword);
+		//passwordfield.sendKeys(randompassword);
+		pageUtility.sendDataToElement(passwordfield, randompassword);
 	}
 	@FindBy(xpath="//select[@id='user_type']")WebElement userTypefield;
 	public void enterUserType(String userType)
 	{
 		//Select select = new Select(userTypefield);
 		//select.selectByVisibleText(userType);
-		pageUtility.
+		pageUtility.selectDataWithVisibleText(userTypefield, userType);
 	}
 	@FindBy(xpath="//button[@type='submit' and @name = 'Create']")WebElement saveButton;
 	public void clickSave() {
 		
-		saveButton.click();
+		//saveButton.click();
+		pageUtility.clickElement(saveButton);
 	}
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement addUserAlert;
 	public boolean isAlertDisplayed() {

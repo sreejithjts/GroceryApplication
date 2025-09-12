@@ -22,7 +22,8 @@ public class LoginPage {
 	}
 	@FindBy(xpath = "//input[@name='password']")WebElement password;
 	public void enterPassword(String passwordValue) {
-		password.sendKeys(passwordValue);
+		//password.sendKeys(passwordValue);
+		pageUtility.sendDataToElement(password, passwordValue);
 	}
 	@FindBy(xpath = "//button[@type='submit']")WebElement login;
 	public void clickOnSignIn() {
