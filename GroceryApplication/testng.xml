@@ -8,10 +8,15 @@
  </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testscript.HomeTest"/>
-      <class name="testscript.ManageNewsTest"/>
-      <class name="testscript.AdminTest"/>
-      <class name="testscript.LoginTest"/>
+<!-- HomeTest will be executed first when we run testng.xml-->
+     <!-- <class name="testScript.HomeTest"/> -->
+      <!-- <class name="testScript.ManageNewsTest"/> -->
+      <class name="testScript.LoginTest">
+      <methods>
+      <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
+      </methods>
+      </class>
+     <!-- <class name="testScript.AdminTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,5 +1,6 @@
 package testscript;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.io.IOException;
@@ -54,10 +55,10 @@ public void verifyLoginWithInvalidPassword() throws IOException {
 	Assert.assertEquals(actual,expected,Messages.INVALIDPASSWORDERROR);
 	
 }
-@Test(priority = 4,description="Login with Invalid Username and Invalid Password")
-public void verifyLoginWithInvalidUsernameInvalidPassword() throws IOException {
-	String usernameValue=ExcelUtility.getStringData(4, 0,Constants.LOGINSHEET);
-	String passwordValue=ExcelUtility.getStringData(4, 1,Constants.LOGINSHEET);
+@Test(priority = 4,description="Login with Invalid Username and Invalid Password",dataProvider = "loginProvider")
+public void verifyLoginWithInvalidUsernameInvalidPassword(String usernameValue,String passwordValue ) throws IOException {
+	//String usernameValue=ExcelUtility.getStringData(4, 0,Constants.LOGINSHEET);
+	//String passwordValue=ExcelUtility.getStringData(4, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
 	loginpage.enterUserName(usernameValue);
 	loginpage.enterPassword(passwordValue);
@@ -65,6 +66,14 @@ public void verifyLoginWithInvalidUsernameInvalidPassword() throws IOException {
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
 	Assert.assertEquals(actual,expected,Messages.INVALIDUSERNAMEANDPPASSWORDERROR);
+}
+@DataProvider(name="loginProvider")
+public Object[][] getDataFromDataProvider() throws IOException//2 dimensional Array Object creation
+{
+	return new Object[][] { new Object[] {"user","password"},//2 parameters are passed username and password.3 sets are passed to improve code coverage
+		new Object[] {"username","pass"},
+		new Object[] {"user1","password1"}
+	};
 }
 }
 

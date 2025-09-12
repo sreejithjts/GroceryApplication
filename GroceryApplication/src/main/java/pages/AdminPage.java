@@ -7,8 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import utilities.PageUtility;
+
 public class AdminPage {
 	public WebDriver driver;
+	PageUtility pageUtility = new PageUtility();
 	public AdminPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
@@ -35,8 +38,9 @@ public class AdminPage {
 	@FindBy(xpath="//select[@id='user_type']")WebElement userTypefield;
 	public void enterUserType(String userType)
 	{
-		Select select = new Select(userTypefield);
-		select.selectByVisibleText(userType);
+		//Select select = new Select(userTypefield);
+		//select.selectByVisibleText(userType);
+		pageUtility.
 	}
 	@FindBy(xpath="//button[@type='submit' and @name = 'Create']")WebElement saveButton;
 	public void clickSave() {
