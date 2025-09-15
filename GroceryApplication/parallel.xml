@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="parallel" parallel ="methods">
+
+<!--for report generation when the test cases are executed-->
 <listeners>
- <listener class-name="reportGeneration.Listener">
- 
+ <listener class-name="reportGeneration.Listener"> 
  </listener>
  </listeners>
-  <test thread-count="5" name="Test">
-  <parameter name="browser" value="chrome"></parameter>
+ <parameter name="browser" value="chrome"></parameter>
+  <test thread-count="5" name="Test1">
     <classes>
-<!-- HomeTest will be executed first when we run testng.xml-->
-     <!-- <class name="testscript.HomeTest"/> -->
-      <!-- <class name="testscript.ManageNewsTest"/> -->
+    <!-- <class name="testscript.HomeTest"/>
+   <class name="testscript.ManageNewsTest"/>-->
+   <!--  <class name="testscript.AdminTest"/>-->
+   <!-- <class name="testscript.LoginTest"/>-->
+   
+   <!--this is to run a single method present in the logintest class-->
       <class name="testscript.LoginTest">
       <methods>
       <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
+      <!--to exclude one test method to run in testng, for each-->
+      <!--<exclude name=""></exclude>-->
       </methods>
       </class>
-     <!-- <class name="testscript.AdminTest"/>-->
     </classes>
   </test> <!-- Test -->
-  <test thread-count="5" name="Firefox Test">
-  <parameter name="browser" value="firefox"></parameter>
+  
+  <!--for running the same test cases for the second time in the same browser-->
+  <test thread-count="5" name="Test2">
     <classes>
-<!-- HomeTest will be executed first when we run testng.xml-->
-     <!-- <class name="testscript.HomeTest"/> -->
-      <!-- <class name="testscript.ManageNewsTest"/> -->
-      <class name="testscript.LoginTest">
-      <methods>
-      <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
-      </methods>
-      </class>
-     <!-- <class name="testscript.AdminTest"/>-->
+    <!--shortcut to comment cntrl+shift+/-->
+    <!--<class name="testscript.HomeTest"/>
+    <class name="testscript.ManageNewsTest"/>-->
+    <!--<class name="testscript.AdminTest"/>-->
+    <!--<class name="testscript.LoginTest"/>-->
+    <!--this is to run a single method present in the logintest class-->
+    <class name="testscript.LoginTest">
+    <methods>
+    <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
+    </methods>
+    </class>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+    
+    </suite>

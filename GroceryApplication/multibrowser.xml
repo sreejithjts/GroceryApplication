@@ -1,37 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="parallel" parallel="methods">
+<suite name="parallel" parallel="tests">
+
+<!--for report gen when the test cases are executed-->
 <listeners>
- <listener class-name="reportGeneration.Listener">
- 
+ <listener class-name="reportgeneration.Listener">
  </listener>
  </listeners>
+ 
   <test thread-count="5" name="Test">
+  <!--first time running browser=chrome-->
   <parameter name="browser" value="chrome"></parameter>
     <classes>
-<!-- HomeTest will be executed first when we run testng.xml-->
-     <!-- <class name="testscript.HomeTest"/> -->
-      <!-- <class name="testscript.ManageNewsTest"/> -->
+     <!-- <class name="testscript.HomeTest"/>-->
+      <!--<class name="testscript.ManageNewsTest"/>-->
+      <!--<class name="testscript.AdminTest"/>-->
+      <!--<class name="testscript.LoginTest"/>-->
+      
+      <!--this is to run a single method present in the logintest class-->
       <class name="testscript.LoginTest">
       <methods>
       <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
       </methods>
       </class>
-     <!-- <class name="testscript.AdminTest"/>-->
     </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Firefox Test">
+  </test>
+  
+  
+  <!--for the second browser-->
+  <test thread-count="5" name="FirefoxTest">
   <parameter name="browser" value="firefox"></parameter>
     <classes>
-<!-- HomeTest will be executed first when we run testng.xml-->
      <!-- <class name="testscript.HomeTest"/> -->
       <!-- <class name="testscript.ManageNewsTest"/> -->
+      <!--<class name="testscript.AdminTest"/>-->
+      <!--<class name="testscript.LoginTest"/>-->
+      
+      <!--this is to run a single method present in the logintest class-->
       <class name="testscript.LoginTest">
       <methods>
       <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
+      <!--to exclude one test method to run in testNG,for each-->
+      <!-- <exclude name=""></exclude>-->
       </methods>
       </class>
-     <!-- <class name="testscript.AdminTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

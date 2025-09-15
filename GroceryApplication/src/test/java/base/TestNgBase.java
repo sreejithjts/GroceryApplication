@@ -13,7 +13,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import com.beust.jcommander.Parameters;
+
 
 import utilities.ScreenshotUtility;
 import org.testng.annotations.Parameters;
@@ -22,7 +22,7 @@ public class TestNgBase  {
 public WebDriver driver;
 @BeforeMethod(alwaysRun = true)
 @Parameters("browser")
-public void browserInitializer(String browser) {
+public void browserInitializer(String browser) throws Exception {
 	//ChromeOptions` allows you to customize how Chrome starts — such as setting preferences, enabling headless mode, disabling extensions, etc.
 	if(browser.equalsIgnoreCase("Chrome")) {
 		//driver=new ChromeDriver();
