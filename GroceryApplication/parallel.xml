@@ -20,4 +20,18 @@
      <!-- <class name="testscript.AdminTest"/>-->
     </classes>
   </test> <!-- Test -->
+  <test thread-count="5" name="Firefox Test">
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+<!-- HomeTest will be executed first when we run testng.xml-->
+     <!-- <class name="testscript.HomeTest"/> -->
+      <!-- <class name="testscript.ManageNewsTest"/> -->
+      <class name="testscript.LoginTest">
+      <methods>
+      <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
+      </methods>
+      </class>
+     <!-- <class name="testscript.AdminTest"/>-->
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

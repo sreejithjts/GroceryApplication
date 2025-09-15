@@ -13,22 +13,32 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.beust.jcommander.Parameters;
+
 import utilities.ScreenshotUtility;
+import org.testng.annotations.Parameters;
 
 public class TestNgBase  {
 public WebDriver driver;
-@BeforeMethod
-public void browserInitializer() {
+@BeforeMethod(alwaysRun = true)
+@Parameters("browser")
+public void browserInitializer(String browser) {
 	//ChromeOptions` allows you to customize how Chrome starts — such as setting preferences, enabling headless mode, disabling extensions, etc.
-	ChromeOptions options = new ChromeOptions();
-	//Create a map that has the key as password leak detection , and value to be false so that leak detect is turned off while launching browser.
-	Map<String, Object> prefs = new HashMap<String, Object>();
-	prefs.put("profile.password_manager_leak_detection", false);
-	//Set the above pref as "Experimental option" so that it is reflected in user preferences
-	options.setExperimentalOption("prefs", prefs);
-	//Launch the driver with customized preference with "options"
-	driver = new ChromeDriver(options);
-	//driver = new FirefoxDriver();
+	if(browser.equalsIgnoreCase("Chrome")) {
+		//driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		Map<String,Object> prefs=new HashMap<>();
+		prefs.put("profile.password_manager_leak_detection", false);
+		options.setExperimentalOption("prefs", prefs);
+		driver=new ChromeDriver(options);
+	}
+	else if(browser.equalsIgnoreCase("Firefox")) {
+		driver=new FirefoxDriver();
+	}
+else {
+		throw new Exception("Invalid browser name");
+	}
+
 	
 	driver.get("https://groceryapp.uniqassosiates.com/admin/login");
 	driver.manage().window().maximize();
