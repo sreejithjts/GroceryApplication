@@ -19,9 +19,9 @@
       
       <!--this is to run a single method present in the logintest class-->
       <class name="testscript.LoginTest">
-      <methods>
-      <include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>
-      </methods>
+     <!-- <methods>-->
+      <!--<include name="verifyLoginWithInvalidUsernameInvalidPassword"></include>-->
+      <!--</methods>-->
       </class>
     </classes>
   </test>

@@ -1,9 +1,11 @@
 package base;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,12 +20,19 @@ import org.testng.annotations.BeforeMethod;
 import utilities.ScreenshotUtility;
 import org.testng.annotations.Parameters;
 
+import constants.Constants;
+
 public class TestNgBase  {
+	Properties prop;
+	FileInputStream f;
 public WebDriver driver;
 @BeforeMethod(alwaysRun = true)
 @Parameters("browser")
 public void browserInitializer(String browser) throws Exception {
 	//ChromeOptions` allows you to customize how Chrome starts — such as setting preferences, enabling headless mode, disabling extensions, etc.
+	prop = new Properties();
+	f= new FileInputStream(Constants.CONFIGFILE);
+	prop.load(f);
 	if(browser.equalsIgnoreCase("Chrome")) {
 		//driver=new ChromeDriver();
 		ChromeOptions options = new ChromeOptions();
@@ -40,7 +49,7 @@ else {
 	}
 
 	
-	driver.get("https://groceryapp.uniqassosiates.com/admin/login");
+	driver.get(prop.getProperty("url"));
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 }

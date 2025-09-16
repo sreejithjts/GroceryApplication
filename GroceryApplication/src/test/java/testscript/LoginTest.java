@@ -30,7 +30,7 @@ public void verifyLoginWithValidCredentials() throws IOException{
 	String expected = "https://groceryapp.uniqassosiates.com/admin";
 	Assert.assertEquals(actual,expected,Messages.VALIDCREDENTIALSERROR);
 }
-@Test(priority = 2,description = "Login with Invalid Username")
+@Test(priority = 2,description = "Login with Invalid Username",groups = {"smoke"})
 public void verifyLoginWithInvalidUsername() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(3, 0,Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(3, 1,Constants.LOGINSHEET);
