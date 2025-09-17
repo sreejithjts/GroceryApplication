@@ -12,27 +12,29 @@ import org.testng.annotations.Test;
 import base.TestNgBase;
 import constants.Constants;
 import constants.Messages;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.ManageNewsPage;
 import utilities.ExcelUtility;
 
 public class ManageNewsTest extends TestNgBase{
+	HomePage homepage;
+	ManageNewsPage managenewspage;
 	@Test(description = "Verify User is able to Add News")
 	public void verifyAddNews() throws IOException {
 	
 	String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterUserName(usernameValue);
-	loginpage.enterPassword(passwordValue);
-	loginpage.clickOnSignIn();
+	loginpage.enterUserName(usernameValue).enterPassword(passwordValue);
+	homepage=loginpage.clickOnSignIn();
 	//Testcases to navigate Manage News 
-	ManageNewsPage managenewspage = new ManageNewsPage(driver);
-	managenewspage.manageNewsTitle();
-	managenewspage.clickNewsButton();
+	//ManageNewsPage managenewspage = new ManageNewsPage(driver);
+	managenewspage=homepage.clickManageNewsTile();
+	managenewspage.clickNewsButton().enterNewsTextbox().clickSaveButton();
 	//testcases to click on newbutton and related actions
-	managenewspage.enterNewsTextbox();
-	managenewspage.clickSaveButton();
+	//managenewspage.enterNewsTextbox();
+	//managenewspage.clickSaveButton();
 	boolean isAlertDisplayed = managenewspage.isAlertDisplayed();
 	Assert.assertTrue(isAlertDisplayed,Messages.ADDNEWSERROR);
 }
@@ -42,13 +44,13 @@ public class ManageNewsTest extends TestNgBase{
 		String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
 		String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(usernameValue);
-		loginpage.enterPassword(passwordValue);
-		loginpage.clickOnSignIn();
+		loginpage.enterUserName(usernameValue).enterPassword(passwordValue);
+		//loginpage.enterPassword(passwordValue);
+		homepage=loginpage.clickOnSignIn();
 		//Testcases to navigate Manage News 
-		ManageNewsPage managenewspage = new ManageNewsPage(driver);
-		managenewspage.manageNewsTitle();
-		managenewspage.clickHome();
+		//ManageNewsPage managenewspage = new ManageNewsPage(driver);
+		managenewspage=homepage.clickManageNewsTile()
+		homepage=managenewspage.clickHome();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/home";
 		Assert.assertEquals(actual,expected,Messages.RETURNTOHOMEERROR);
@@ -59,15 +61,15 @@ public class ManageNewsTest extends TestNgBase{
 		String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
 		String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(usernameValue);
-		loginpage.enterPassword(passwordValue);
-		loginpage.clickOnSignIn();
+		loginpage.enterUserName(usernameValue).enterPassword(passwordValue);
+		//loginpage.enterPassword(passwordValue);
+		homepage=loginpage.clickOnSignIn();
 		//Testcases to navigate Manage News 
-		ManageNewsPage managenewspage = new ManageNewsPage(driver);
-		managenewspage.manageNewsTitle();
-		managenewspage.clickSearch();
-		managenewspage.sendTitle();
-		managenewspage.searchButtonClick();
+		managenewspage = homepage.clickManageNewsTile();
+		managenewspage.clickSearch().sendTitle().searchButtonClick();
+		//managenewspage.clickSearch();
+		//managenewspage.sendTitle();
+		//managenewspage.searchButtonClick();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/news/index";
 		Assert.assertEquals(actual,expected,Messages.SEARCHNEWSERROR);
@@ -77,14 +79,14 @@ public class ManageNewsTest extends TestNgBase{
 		String usernameValue=ExcelUtility.getStringData(6, 0,Constants.LOGINSHEET);
 		String passwordValue=ExcelUtility.getStringData(6, 1,Constants.LOGINSHEET);
 		LoginPage loginpage = new LoginPage(driver);
-		loginpage.enterUserName(usernameValue);
-		loginpage.enterPassword(passwordValue);
-		loginpage.clickOnSignIn();
+		loginpage.enterUserName(usernameValue).enterPassword(passwordValue);
+		//loginpage.enterPassword(passwordValue);
+		homepage=loginpage.clickOnSignIn();
 		//Testcases to navigate Manage News 
-		ManageNewsPage managenewspage = new ManageNewsPage(driver);
-		managenewspage.manageNewsTitle();
-		managenewspage.clickSearch();
-		managenewspage.searchResetClick();
+		managenewspage = homepage.clickManageNewsTile();
+		managenewspage.clickSearch().searchResetClick();
+		//managenewspage.clickSearch();
+		//managenewspage.searchResetClick();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/list-news";
 		Assert.assertEquals(actual,expected,Messages.RESETERROR);
