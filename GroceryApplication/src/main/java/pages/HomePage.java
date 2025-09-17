@@ -17,16 +17,22 @@ public class HomePage {
 		PageFactory.initElements(driver,this);
 	}
 	@FindBy(xpath = "//img[@src='https://groceryapp.uniqassosiates.com/public/assets/admin/dist/img/avatar5.png']")WebElement adminicon;
-	public void clickAdminIcon()
+	public HomePage clickAdminIcon()
 	{
 	//adminicon.click();
 	pageUtility.clickElement(adminicon);
+	return this;
 	}
 	@FindBy(xpath="//i[@class='ace-icon fa fa-power-off']")WebElement logout;
-	public void clickLogoutButton()
+	public LoginPage clickLogoutButton()
 	{
 	//logout.click();
 	pageUtility.clickElement(logout);
+	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement adminMoreInfo;
+	public void clickAdminMoreInfo() {
+		//adminMoreInfo.click();
+		pageUtility.clickElement(adminMoreInfo);
+	return new LoginPage(driver);
 	}
 	
 	

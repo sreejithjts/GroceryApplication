@@ -17,18 +17,17 @@ import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class HomeTest extends TestNgBase{
+HomePage homepage;
 @Test(description = "Verify User is able to Logout")
 public void verifyLogout() throws IOException {
 	//verifyLoginWithValidCredentials
 	String usernameValue=ExcelUtility.getStringData(1, 0,Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(1, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterUserName(usernameValue);
-	loginpage.enterPassword(passwordValue);
-	loginpage.clickOnSignIn();
-	HomePage homepage = new HomePage(driver);
+	loginpage.enterUserName(usernameValue).enterPassword(passwordValue);
+	homepage=loginpage.clickOnSignIn();
 	homepage.clickAdminIcon();
-	homepage.clickLogoutButton();
+	loginpage=homepage.clickLogoutButton();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
 	Assert.assertEquals(actual,expected,Messages.LOGOUTERROR);

@@ -1,30 +1,27 @@
 package testscript;
 
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import java.io.IOException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.TestNgBase;
 import constants.Constants;
 import constants.Messages;
+import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class LoginTest extends TestNgBase {
+HomePage homepage;
 @Test(priority = 1,description = "Login with valid credentials",retryAnalyzer = retry.Retry.class)
 public void verifyLoginWithValidCredentials() throws IOException{
 	String usernameValue=ExcelUtility.getStringData(1, 0, Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(1, 1, Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterUserName(usernameValue);
-	loginpage.enterPassword(passwordValue);
-	loginpage.clickOnSignIn();	
+	loginpage.enterUserName(usernameValue).enterPassword(passwordValue);//Chaining of methods. Enter username and enter password
+	homepage=loginpage.clickOnSignIn();//chaining of classes	
 	
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin";
@@ -35,9 +32,7 @@ public void verifyLoginWithInvalidUsername() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(3, 0,Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(3, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterUserName(usernameValue);
-	loginpage.enterPassword(passwordValue);
-	loginpage.clickOnSignIn();
+	loginpage.enterUserName(usernameValue).enterPassword(passwordValue).clickOnSignIn();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
 	Assert.assertEquals(actual,expected,Messages.INVALIDUSERNAMEERROR);
@@ -47,9 +42,7 @@ public void verifyLoginWithInvalidPassword() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(2, 0,Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(2, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterUserName(usernameValue);
-	loginpage.enterPassword(passwordValue);
-	loginpage.clickOnSignIn();
+	loginpage.enterUserName(usernameValue).enterPassword(passwordValue).clickOnSignIn();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
 	Assert.assertEquals(actual,expected,Messages.INVALIDPASSWORDERROR);
@@ -60,9 +53,7 @@ public void verifyLoginWithInvalidUsernameInvalidPassword(String usernameValue,S
 	//String usernameValue=ExcelUtility.getStringData(4, 0,Constants.LOGINSHEET);
 	//String passwordValue=ExcelUtility.getStringData(4, 1,Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterUserName(usernameValue);
-	loginpage.enterPassword(passwordValue);
-	loginpage.clickOnSignIn();
+	loginpage.enterUserName(usernameValue).enterPassword(passwordValue).clickOnSignIn();
 	String actual = driver.getCurrentUrl();
 	String expected = "https://groceryapp.uniqassosiates.com/admin/login";
 	Assert.assertEquals(actual,expected,Messages.INVALIDUSERNAMEANDPPASSWORDERROR);

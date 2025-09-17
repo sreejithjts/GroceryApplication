@@ -18,6 +18,8 @@ import utilities.ExcelUtility;
 import utilities.FakerUtility;
 
 public class AdminTest extends TestNgBase {
+	HomePage homepage;
+	AdminPage adminpage;
 	@Test(description = "Verify Add New Users in the Admin")
 	public void verifyAddUser() throws IOException {
 		String usernameValue=ExcelUtility.getStringData(1, 0,Constants.LOGINSHEET);
