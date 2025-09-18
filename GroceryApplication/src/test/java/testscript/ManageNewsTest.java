@@ -49,7 +49,7 @@ public class ManageNewsTest extends TestNgBase{
 		homepage=loginpage.clickOnSignIn();
 		//Testcases to navigate Manage News 
 		//ManageNewsPage managenewspage = new ManageNewsPage(driver);
-		managenewspage=homepage.clickManageNewsTile()
+		managenewspage=homepage.clickManageNewsTile();
 		homepage=managenewspage.clickHome();
 		String actual = driver.getCurrentUrl();
 		String expected = "https://groceryapp.uniqassosiates.com/admin/home";
