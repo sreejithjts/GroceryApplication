@@ -24,6 +24,7 @@ public class AdminPage {
 	public AdminPage clickNewButton()
 	{
 		//newbutton.click();
+		waitUtility.waitUntilClickable(driver, newbutton);
 		pageUtility.clickElement(newbutton);
 		return this;
 	}
@@ -53,6 +54,7 @@ public class AdminPage {
 	public AdminPage clickSave() {
 		
 		//saveButton.click();
+		waitUtility.waitUntilClickable(driver, saveButton);
 		pageUtility.clickElement(saveButton);
 		return this;
 	}

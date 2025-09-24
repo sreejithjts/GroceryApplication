@@ -7,11 +7,13 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.PageUtility;
+import utilities.WaitUtility;
 
 public class HomePage {
 
 	public WebDriver driver;
 	PageUtility pageUtility = new PageUtility();
+	WaitUtility waitUtility = new WaitUtility();
 	public HomePage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver,this);
@@ -20,6 +22,7 @@ public class HomePage {
 	public HomePage clickAdminIcon()
 	{
 	//adminicon.click();
+	waitUtility.waitUntilClickable(driver, adminicon);
 	pageUtility.clickElement(adminicon);
 	return this;
 	}
@@ -27,17 +30,20 @@ public class HomePage {
 	public LoginPage clickLogoutButton()
 	{
 	//logout.click();
+	waitUtility.waitUntilClickable(driver, logout);
 	pageUtility.clickElement(logout);
 	return new LoginPage(driver);
 	}
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-admin' and @class='small-box-footer']")WebElement adminMoreInfo;
 	public AdminPage clickAdminMoreInfo() {
 		//adminMoreInfo.click();
+	waitUtility.waitUntilClickable(driver, adminMoreInfo);
 	pageUtility.clickElement(adminMoreInfo);
 	return new AdminPage(driver);
 	}
 	@FindBy(xpath = "//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'and @class='small-box-footer']")WebElement managenewstile;
 	public ManageNewsPage clickManageNewsTile() {
+		waitUtility.waitUntilClickable(driver, managenewstile);
 		pageUtility.clickElement(managenewstile);
 		return new ManageNewsPage(driver) ;
    }

@@ -19,11 +19,13 @@ public class ManageNewsPage {
 	}
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news'and @class='small-box-footer']")WebElement managenewstile;
 	public ManageNewsPage manageNewsTitle() {
+		waitUtility.waitUntilClickable(driver, managenewstile);
 		pageUtility.clickElement(managenewstile);
 		return this;
 	}
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newsbutton;
 	public ManageNewsPage clickNewsButton() {
+		waitUtility.waitUntilClickable(driver, newsbutton);
 		pageUtility.clickElement(newsbutton);
 		return this;
 	}
@@ -34,17 +36,20 @@ public class ManageNewsPage {
 	}
 	@FindBy(xpath="//button[@type='submit']")WebElement savebutton;
 	public ManageNewsPage clickSaveButton() {
+		waitUtility.waitUntilClickable(driver, savebutton);
 		pageUtility.clickElement(savebutton);
 		return this;
 	}
 	@FindBy(xpath="//a[text()='Home']")WebElement home;
 	public HomePage clickHome() {
+		waitUtility.waitUntilClickable(driver, home);
 		pageUtility.clickElement(home);
 		return new HomePage(driver);
 		
 	}
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-primary']")WebElement search;
 	public ManageNewsPage clickSearch() {
+		waitUtility.waitUntilClickable(driver, search);
 		pageUtility.clickElement(search);
 		return this;
 	}
@@ -55,11 +60,13 @@ public class ManageNewsPage {
 	}
 	@FindBy(xpath="//button[@name='Search']")WebElement searchbutton;
 	public ManageNewsPage searchButtonClick() {
+		waitUtility.waitUntilClickable(driver, searchbutton);
 		pageUtility.clickElement(searchbutton);
 		return this;
 	}
 	@FindBy(xpath="//a[text()='Reset']")WebElement retest;
 	public ManageNewsPage searchResetClick() {
+		waitUtility.waitUntilClickable(driver, retest);
 		pageUtility.clickElement(retest);
 		return this;
 	}
